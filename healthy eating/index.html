@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Eating</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-green-600 text-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">
+        Healthy<span class="text-yellow-300">Food</span>
+      </h1>
+
+      <ul id="menu" class="hidden md:flex gap-8 font-semibold">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">Sobre</a></li>
+        <li><a href="#recipes" class="hover:text-yellow-300">Receitas</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contato</a></li>
+      </ul>
+
+      <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home"
+  class="h-screen flex items-center justify-center bg-cover bg-center relative"
+  style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1600&q=80');">
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative text-center text-white max-w-xl">
+    <h2 class="text-5xl font-bold mb-4">
+      Alimente seu corpo com saúde
+    </h2>
+    <p class="mb-6 text-lg">
+      Descubra receitas simples, nutritivas e deliciosas.
+    </p>
+    <a href="#recipes" class="btn-primary">
+      Ver Receitas
+    </a>
+  </div>
+</section>
+
+  <!-- SOBRE -->
+  <section id="about" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="section-title">Sobre Nós</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-600">
+      Nosso objetivo é ajudar você a ter uma alimentação mais equilibrada
+      com receitas fáceis e saudáveis.
+    </p>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="section-title">Por que escolher alimentação saudável?</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+      <div class="p-6 shadow-lg rounded-xl">
+        <div class="text-4xl mb-4">🥗</div>
+        <h3 class="font-bold text-xl mb-2">Mais Energia</h3>
+        <p class="text-gray-600">
+          Alimentos naturais ajudam no desempenho diário.
+        </p>
+      </div>
+
+      <div class="p-6 shadow-lg rounded-xl">
+        <div class="text-4xl mb-4">❤️</div>
+        <h3 class="font-bold text-xl mb-2">Saúde do Coração</h3>
+        <p class="text-gray-600">
+          Dietas equilibradas reduzem riscos cardiovasculares.
+        </p>
+      </div>
+
+      <div class="p-6 shadow-lg rounded-xl">
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="font-bold text-xl mb-2">Foco Mental</h3>
+        <p class="text-gray-600">
+          Nutrientes certos melhoram concentração.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- RECEITAS -->
+  <section id="recipes" class="py-20 bg-green-50">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Receitas Populares</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+          <div class="card-body">
+            <h3>Salada Natural</h3>
+            <p>Leve e nutritiva para seu dia.</p>
+            <button class="btn-secondary">Ver Receita</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40">
+          <div class="card-body">
+            <h3>Smoothie Verde</h3>
+            <p>Energia natural.</p>
+            <button class="btn-secondary">Ver Receita</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+          <div class="card-body">
+            <h3>Bowl Fit</h3>
+            <p>Completo e saudável.</p>
+            <button class="btn-secondary">Ver Receita</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="section-title">Fale Conosco</h2>
+
+    <form class="max-w-xl mx-auto grid gap-4 mt-8">
+      <input type="text" placeholder="Seu Nome" class="input-style">
+      <input type="email" placeholder="Seu Email" class="input-style">
+      <textarea placeholder="Sua Mensagem" class="input-style"></textarea>
+      <button class="btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="bg-green-700 text-white text-center py-6">
+    © 2026 Healthy Food
+  </footer>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
