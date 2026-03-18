@@ -2,120 +2,152 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthy Eating</title>
+  <title>Vida Saudável</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/estilo.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <h1 class="logo">Healthy Eating</h1>
-    <div class="nav-links">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Comecerto.ai</a>
 
-      <button onclick="toggleDark()" class="dark-btn">🌙</button>
+    <div>
+      <a href="#home" class="text-white me-3 text-decoration-none">Home</a>
+      <a href="#beneficios" class="text-white me-3 text-decoration-none">Benefícios</a>
+      <a href="#imc" class="text-white me-3 text-decoration-none">IMC</a>
+      <a href="#receitas" class="text-white text-decoration-none">Receitas</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-    <section class="hero">
-    <div class="hero-text">
-        <h1>Alimentação Saudável é Qualidade de Vida</h1>
-        <p>Pequenas escolhas diárias fazem grandes diferenças no seu futuro.</p>
-        <a href="#imc" class="btn-primary">Calcular meu IMC</a>
-    </div>
+<!-- HERO -->
+<section id="home" class="container" style="margin-top:100px;">
+  <div class="row align-items-center">
 
-    <div class="hero-img">
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Comida saudável">
-    </div>
-    </section>
+    <div class="col-md-6">
+      <h1 class="fw-bold">Comer bem é viver bem.</h1>
+      <p class="text-muted">
+        A alimentação saudável é fundamental para evitar o aparecimento de doenças, como o diabetes, hipertensão, problemas do coração e AVC. Além disso, os bons hábitos alimentares garantem uma ingestão adequada de nutrientes que ajudam a manter todos os sistemas do corpo funcionando bem, melhorando a imunidade, favorecendo uma boa memória, auxiliando a manter unhas e cabelos fortes, uma pele saudável e um intestino funcionando no ritmo certo.
+      </p>
 
-  <section class="hydration">
-  <h2>Controle sua Hidratação</h2>
-
-  <div class="water-box">
-    <p id="aguaContador">0 copos</p>
-    <p id="litros">0.00 L</p>
-    <p id="motivacao" class="motivacao">Vamos começar 💧</p>
-
-    <div class="progress-bar">
-      <div id="progress"></div>
+      <a href="#imc" class="btn btn-success mt-3">Calcular meu IMC</a>
     </div>
 
-    <button onclick="beberAgua()" class="btn-blue">Beber 1 Copo</button>
+    <div class="col-md-6 text-center">
+      <img src="img/anna-pelzer-igfigp5onv0-unsplash.webp" 
+           class="img-fluid rounded shadow"
+           alt="Comida saudável">
+    </div>
+
   </div>
 </section>
 
-  <section class="nutrients">
-    <h2>Nutrientes Essenciais</h2>
-    <div class="grid-4">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="">
-        <h3>Carboidratos</h3>
-        <p>Principal fonte de energia do corpo.</p>
-      </div>
-      <div class="card">
-        <img src="https://www.estadao.com.br/resizer/btxO8smlAmeq1bAbefjPZOZk7qk=/arc-anglerfish-arc2-prod-estadao/public/MVSPO6AP2BAXJATPAUY5ATAQS4.jpeg" alt="">
-        <h3>Proteínas</h3>
-        <p>Construção e reparação muscular.</p>
-      </div>
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxj4ixiNo_VRUc94jrcaQtWBYnJb86VnFkA&s" alt="">
-        <h3>Vitaminas</h3>
-        <p>Fortalecem o sistema imunológico.</p>
-      </div>
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqfny4w_OfflkjQc-dBujpQ9-ryraesDeXQ&s" alt="">
-        <h3>Gorduras boas</h3>
-        <p>Essenciais para o funcionamento hormonal.</p>
-      </div> 
-      </div>
-      </section>
-  <section class="plate">
-    <h2>Monte um Prato Saudável</h2>
-    <button onclick="montarPrato()" class="btn-primary">Gerar sugestão</button>
-    <p id="prato"></p>
-  </section>
+<!-- BENEFÍCIOS -->
+<section id="beneficios" class="container mt-5 text-center">
+  <h2 class="mb-4">Por que começar?</h2>
 
-  <section class="benefits">
-    <h2>Benefícios da Alimentação Saudável</h2>
-    <div class="grid-3">
-      <div class="card">
-        <h3>Mais Energia</h3>
-        <p>Melhora o rendimento físico e mental.</p>
-      </div>
-      <div class="card">
-        <h3>Prevenção de Doenças</h3>
-        <p>Reduz riscos de problemas cardíacos.</p>
-      </div>
-      <div class="card">
-        <h3>Bem-estar</h3>
-        <p>Melhora a autoestima e qualidade de vida.</p>
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm rounded bg-white">
+        <h4>💧 Hidratação</h4>
+        <p class="text-muted">Melhora foco e energia.</p>
       </div>
     </div>
-  </section>
 
-  <section id="imc" class="imc-section">
-    <h2>Calculadora de IMC</h2>
-    <input type="number" id="peso" placeholder="Peso (kg)">
-    <input type="number" id="altura" placeholder="Altura (m)">
-    <button onclick="calcularIMC()" class="btn-primary">Calcular</button>
-    <p id="resultado"></p>
-  </section>
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm rounded bg-white">
+        <h4>🥗 Alimentação</h4>
+        <p class="text-muted">Mais saúde no dia a dia.</p>
+      </div>
+    </div>
 
-  <section class="color-section">
-  <h2>Escolha Natural, Viva Melhor</h2>
+    <div class="col-md-4 mb-4">
+      <div class="p-4 shadow-sm rounded bg-white">
+        <h4>⚡ Energia</h4>
+        <p class="text-muted">Seu corpo responde rápido.</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-  <footer>
-    <p>© 2026 - Projeto Alimentação Saudável</p>
-    <p>Desenvolvido por Adriano</p>
-  </footer>
+<!-- IMC -->
+<section id="imc" class="container mt-5 text-center">
+  <h2>Calculadora de IMC</h2>
+  <p class="text-muted">Sem pressão, é só pra ter uma noção 😉</p>
 
-  <script src="js/script.js"></script>
+  <div class="col-md-4 mx-auto">
+
+    <input type="number" id="peso" class="form-control mb-2" placeholder="Peso (kg)">
+    <input type="number" id="altura" class="form-control mb-2" placeholder="Altura (m)">
+
+    <button onclick="calcularIMC()" class="btn btn-success w-100">Calcular</button>
+
+    <p id="resultado" class="mt-3 fw-bold"></p>
+  </div>
+
+  <!-- TEXTO -->
+  <div class="mt-4 text-start bg-light p-3 rounded col-md-6 mx-auto">
+    <h5>O que é IMC?</h5>
+    <p>
+      É um cálculo simples usando peso e altura pra dar uma ideia geral do corpo.
+    </p>
+
+    <h5>Por que isso importa?</h5>
+    <p>
+      Não define tudo, mas ajuda você a entender por onde começar.
+    </p>
+  </div>
+</section>
+
+<!-- RECEITAS -->
+<section id="receitas" class="container mt-5 text-center">
+  <h2 class="mb-4">Receitas simples</h2>
+
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-3">
+        <h5>Frango + batata doce</h5>
+        <button class="btn btn-success" onclick="verReceita('frango')">Ver</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-3">
+        <h5>Omelete</h5>
+        <button class="btn btn-success" onclick="verReceita('omelete')">Ver</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-3">
+        <h5>Salada</h5>
+        <button class="btn btn-success" onclick="verReceita('salada')">Ver</button>
+      </div>
+    </div>
+
+  </div>
+
+  <p id="receitaTexto" class="fw-bold mt-3"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center p-3 bg-success text-white mt-5">
+  <p class="mb-0">Feito por Adriano 🚀</p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
 </body>
 </html>

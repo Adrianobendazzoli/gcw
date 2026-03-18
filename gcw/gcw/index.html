@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Eating</title>
+
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">Healthy Eating</h1>
+    <div class="nav-links">
+
+      <button onclick="toggleDark()" class="dark-btn">🌙</button>
+    </div>
+  </nav>
+
+    <section class="hero">
+    <div class="hero-text">
+        <h1>Alimentação Saudável é Qualidade de Vida</h1>
+        <p>Pequenas escolhas diárias fazem grandes diferenças no seu futuro.</p>
+        <a href="#imc" class="btn-primary">Calcular meu IMC</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Comida saudável">
+    </div>
+    </section>
+
+  <section class="hydration">
+  <h2>Controle sua Hidratação</h2>
+
+  <div class="water-box">
+    <p id="aguaContador">0 copos</p>
+    <p id="litros">0.00 L</p>
+    <p id="motivacao" class="motivacao">Vamos começar 💧</p>
+
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <button onclick="beberAgua()" class="btn-blue">Beber 1 Copo</button>
+  </div>
+</section>
+
+  <section class="nutrients">
+    <h2>Nutrientes Essenciais</h2>
+    <div class="grid-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="">
+        <h3>Carboidratos</h3>
+        <p>Principal fonte de energia do corpo.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.estadao.com.br/resizer/btxO8smlAmeq1bAbefjPZOZk7qk=/arc-anglerfish-arc2-prod-estadao/public/MVSPO6AP2BAXJATPAUY5ATAQS4.jpeg" alt="">
+        <h3>Proteínas</h3>
+        <p>Construção e reparação muscular.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxj4ixiNo_VRUc94jrcaQtWBYnJb86VnFkA&s" alt="">
+        <h3>Vitaminas</h3>
+        <p>Fortalecem o sistema imunológico.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzqfny4w_OfflkjQc-dBujpQ9-ryraesDeXQ&s" alt="">
+        <h3>Gorduras boas</h3>
+        <p>Essenciais para o funcionamento hormonal.</p>
+      </div> 
+      </div>
+      </section>
+  <section class="plate">
+    <h2>Monte um Prato Saudável</h2>
+    <button onclick="montarPrato()" class="btn-primary">Gerar sugestão</button>
+    <p id="prato"></p>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefícios da Alimentação Saudável</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Mais Energia</h3>
+        <p>Melhora o rendimento físico e mental.</p>
+      </div>
+      <div class="card">
+        <h3>Prevenção de Doenças</h3>
+        <p>Reduz riscos de problemas cardíacos.</p>
+      </div>
+      <div class="card">
+        <h3>Bem-estar</h3>
+        <p>Melhora a autoestima e qualidade de vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="imc" class="imc-section">
+    <h2>Calculadora de IMC</h2>
+    <input type="number" id="peso" placeholder="Peso (kg)">
+    <input type="number" id="altura" placeholder="Altura (m)">
+    <button onclick="calcularIMC()" class="btn-primary">Calcular</button>
+    <p id="resultado"></p>
+  </section>
+
+  <section class="color-section">
+  <h2>Escolha Natural, Viva Melhor</h2>
+</section>
+
+  <footer>
+    <p>© 2026 - Projeto Alimentação Saudável</p>
+    <p>Desenvolvido por Adriano</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

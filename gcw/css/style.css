@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #f8fafc, #e2fbe8);
+  color: #1e293b;
+}
+
+/* NAVBAR */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(11, 65, 31, 0.9) !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+}
+
+.navbar a {
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.navbar a:hover {
+  transform: translateY(-2px);
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 10px;
+ 
+}
+.img_inicio {
+  margin-top: 10px;
+  width: 100%;
+  
+
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #475569;
+}
+
+/* BOTÕES */
+.btn-success {
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline-success {
+  border-radius: 30px;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* RECEITAS TEXTO */
+#receitaTexto {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMC BOX */
+input {
+  border-radius: 10px !important;
+  padding: 12px !important;
+}
+
+#resultado {
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 80px;
+}
+
+/* MICRO INTERAÇÃO */
+button:active {
+  transform: scale(0.95);
+}
