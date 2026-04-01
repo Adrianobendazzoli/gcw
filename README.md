@@ -1,1 +1,1 @@
-https://adrianobendazzoli.github.io/gcw/
+https://adrianobendazzoli.github.io/gcw/index.html
